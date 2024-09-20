@@ -3,7 +3,10 @@
 numOne = int(input("Ingrese número 1: "));
 numTwo = int(input("Ingrese número 2: "));
 
-if numOne > numTwo: 
-    print(f"El número mayor es {numOne} y el menor es {numTwo}");
+if numOne == numTwo:
+    print("Los números ingresados son iguales.");
 else:
-    print(f"El número mayor es {numTwo} y el menor es {numOne}");
+    if numOne > numTwo: 
+     print(f"El número mayor es {numOne} y el menor es {numTwo}");
+    else:
+     print(f"El número mayor es {numTwo} y el menor es {numOne}");
