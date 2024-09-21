@@ -17,6 +17,26 @@ public class Ejercicio_18 {
 
         sc.close();
 
-        // if (Math.round(fechaUno / 10000))
+        if (Math.round(fechaUno / 10000) > Math.round(fechaDos / 10000)) {
+            System.out.println(fechaUno + " es mayor que " + fechaDos);
+        } else {
+            if (Math.round(fechaUno / 10000) == Math.round(fechaDos / 10000)) {
+                if (Math.round(fechaUno / 100) % 100 > Math.round(fechaDos / 100) % 100) {
+                    System.out.println(fechaUno + " es mayor que " + fechaDos);
+                } else {
+                    if (Math.round(fechaUno / 100) % 100 == Math.round(fechaDos / 100) % 100) {
+                        if (Math.round(fechaUno % 100) > Math.round(fechaDos % 100)) {
+                            System.out.println(fechaUno + " es mayor que " + fechaDos);
+                        } else {
+                            System.out.println(fechaDos + " es mayor que " + fechaUno);
+                        }
+                    } else {
+                        System.out.println(fechaDos + " es mayor que " + fechaUno);
+                    }
+                }
+            } else {
+                System.out.println(fechaDos + " es mayor que " + fechaUno);
+            }
+        }
     }
 }
