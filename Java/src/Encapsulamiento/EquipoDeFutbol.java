@@ -63,6 +63,6 @@ public class EquipoDeFutbol {
         if (equipoDeFutbol.juegoSucio())
             System.out.println("El juego del equipo es sucio");
         else
-            System.out.println("El juego del equipo no es sucio"); 
+            System.out.println("El juego del equipo no es sucio");
     }
 }
